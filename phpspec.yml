@@ -1,0 +1,8 @@
+suites:
+  elevator_suite:
+    namespace: Elevators
+    psr4_prefix: Elevators
+formatter:
+  name: pretty
+extensions:
+  LeanPHP\PhpSpec\CodeCoverage\CodeCoverageExtension: ~
