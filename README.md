@@ -23,13 +23,13 @@ Switch to the newly created project directory:
     
 Run docker-compose:
 
-    - `$ docker-compose up -d`
+    $ docker-compose up -d
     
 Run composer install:
 
     $ docker run --rm --interactive --tty --volume $PWD:/app composer install
 **Hint**: we run composer from the docker container, because the project requires 
-at least PHP 7.1, and this relatively new versions is not always available locally
+at least PHP 7.1, and this relatively new versions is not always available locally.
 
 That's it! Check that the application is working at port `8080` of your docker's 
 host, e.g., `http://localhost:8080`, for systems which support Docker natively.
@@ -54,4 +54,4 @@ should return the name that we want. Copy it (excluding the first `/`). We'll us
 ### Coverage
 PHPSpec will generate the coverage under the `./coverage` folder.
 
-###Thanks for taking a look, and have fun!
+### Thanks for taking a look, and have fun!
