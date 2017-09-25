@@ -60,4 +60,11 @@ class ElevatorContext implements Context
             Assert::assertTrue($this->elevator->getFloorsQueue()[$floor]);
         }
     }
+
+    /**
+     * @When The elevator has reached floor number :number
+     */
+    public function elevatorHasReachedFloorNumber(int $number) {
+        $this->elevator->dequeueFloor($number);
+    }
 }

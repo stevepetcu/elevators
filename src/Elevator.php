@@ -28,4 +28,11 @@ class Elevator
 
         return $this;
     }
+
+    public function dequeueFloor(int $floor): self
+    {
+        unset($this->floorsQueue[$floor]);
+
+        return $this;
+    }
 }

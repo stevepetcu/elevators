@@ -28,4 +28,11 @@ class ElevatorSpec extends ObjectBehavior
         $this->queueFloor(3);
         $this->getFloorsQueue()->shouldReturn([3 => true, 1 => true]);
     }
+
+    public function it_can_remove_a_floor_from_the_queue() {
+        $this->queueFloor(3);
+        $this->dequeueFloor(3);
+
+        $this->getFloorsQueue()->shouldReturn([]);
+    }
 }

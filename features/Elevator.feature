@@ -12,3 +12,8 @@ Feature: Elevator
     Given The elevator's itinerary is 3,1
     When I select floor number 3
     Then The elevator's itinerary should be 3,1
+
+  Scenario: Reaching a floor removes that floor from the elevator's queue
+    Given The elevator's itinerary is 3,1
+    When The elevator has reached floor number 3
+    Then The elevator's itinerary should be 1
