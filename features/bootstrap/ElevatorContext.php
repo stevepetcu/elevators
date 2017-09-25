@@ -10,7 +10,6 @@ use PHPUnit\Framework\Assert;
  */
 class ElevatorContext implements Context
 {
-    /** @var  Elevator */
     private $elevator;
 
     public function __construct()
