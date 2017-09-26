@@ -1,4 +1,4 @@
-# Elevator System Modelled in PHP, using a BDD approach
+# Elevator System modelled in PHP, using a BDD approach
 
 ## Components used in the BDD approach:
 - [Behat](http://behat.org)
